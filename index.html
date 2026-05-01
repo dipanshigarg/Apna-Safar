@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Safar - Travel with Confidence</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-container">
+        <a class="logo" href="index.html" aria-label="Apna Safar home">
+            <img src="assets/apna-safar-logo.png" alt="Apna Safar">
+            <span class="logo-badge">Beta</span>
+        </a>
+
+    <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <a class="header-cta" href="contact.html">Get Early Access</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="hero">
+    <div class="container hero-content">
+        <span class="eyebrow">For the moment after you arrive</span>
+        <h1>Feel safer in cities you don’t know.</h1>
+        <p>You step out of the station. Your phone has the booking, but not the answer to the real question: which road, ride, or price should I trust right now?</p>
+        <form class="hero-search" id="safetySearch">
+            <label for="searchInput">Check a route or place</label>
+            <div class="search-row">
+                <i class="fas fa-location-dot"></i>
+                <input id="searchInput" type="text" placeholder="Try “Airport to hostel” or “Is MG Road safe tonight?”" autocomplete="off">
+                <button type="submit">Check</button>
+            </div>
+            <div class="example-searches" aria-label="Example searches">
+                <button type="button">Delhi station to hostel</button>
+                <button type="button">Is Baga Beach safe at night?</button>
+                <button type="button">Fair auto fare to campus</button>
+            </div>
+        </form>
+        <div class="search-result-card" id="searchResult" aria-live="polite">
+            <div>
+                <span class="result-label">Suggested next step</span>
+                <h3 id="resultTitle">Main road route looks safer right now.</h3>
+                <p id="resultTip">Stay on the lit road, confirm the fare before you sit, and avoid the inner lane after 9 PM.</p>
+            </div>
+            <div class="result-grid">
+                <span><strong id="resultRisk">Low</strong> risk</span>
+                <span><strong id="resultPrice">₹120-₹150</strong> fair price</span>
+                <span><strong id="resultTrust">82%</strong> trust score</span>
+            </div>
+        </div>
+        <div class="hero-cta">
+            <a href="contact.html" class="btn btn-primary">Get Early Access</a>
+            <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+            <span class="coming-soon">Coming Soon</span>
+        </div>
+    </div>
+    <div class="app-mockup reveal" aria-label="Apna Safar product preview">
+        <div class="phone-frame">
+            <div class="phone-topbar">
+                <span>Apna Safar</span>
+                <strong>Live</strong>
+            </div>
+            <div class="mock-search">
+                <i class="fas fa-location-dot"></i>
+                <span>Connaught Place to Hostel</span>
+            </div>
+            <div class="map-card">
+                <div class="map-grid"></div>
+                <span class="map-pin start"><i class="fas fa-circle"></i></span>
+                <span class="map-pin end"><i class="fas fa-location-dot"></i></span>
+                <svg class="route-line" viewBox="0 0 320 180" aria-hidden="true">
+                    <path d="M40 135 C95 95, 105 55, 160 78 S235 125, 282 46" />
+                </svg>
+                <div class="map-chip safe">Safer Route</div>
+                <div class="map-chip time">18 min</div>
+            </div>
+            <div class="insight-stack">
+                <div class="insight-card safety">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <strong>Area safety</strong>
+                        <span>Well-lit route, active public movement</span>
+                    </div>
+                    <b>Low Risk</b>
+                </div>
+                <div class="insight-grid">
+                    <div>
+                        <span>Auto fare</span>
+                        <strong>₹120-₹150</strong>
+                        <small>Fair range</small>
+                    </div>
+                    <div>
+                        <span>Trust score</span>
+                        <strong>82%</strong>
+                        <small>Community backed</small>
+                    </div>
+                </div>
+                <div class="assistant-note">
+                    <i class="fas fa-lightbulb"></i>
+                    <span>Avoid the market lane after 9 PM. Main road is safer.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="social-proof section-compact">
+    <div class="container">
+        <div class="section-header reveal">
+            <h2>Built for Real Travelers</h2>
+            <p>For people who do not have a local friend in every city.</p>
+        </div>
+        <div class="proof-grid">
+            <article class="proof-card reveal">
+                <i class="fas fa-users"></i>
+                <h3>Signals from people who have actually been there</h3>
+            </article>
+            <article class="proof-card reveal">
+                <i class="fas fa-heart-pulse"></i>
+                <h3>Built around the small doubts travelers rarely say out loud</h3>
+            </article>
+            <article class="proof-card reveal">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Made for students, solo travelers, and first-time visitors</h3>
+            </article>
+            <article class="proof-card proof-highlight reveal">
+                <span>Early supporters are helping shape the first version</span>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section problem-section">
+    <div class="container section-header reveal">
+        <span class="eyebrow">The gap</span>
+        <h2>Why Travel Still Feels Uncertain</h2>
+    </div>
+
+    <div class="problem-grid">
+        <div class="problem-card reveal">
+            <i class="fas fa-map-marked-alt"></i>
+            <h3>You booked the trip. Now you still have to reach safely.</h3>
+            <p>Most apps stop at tickets, hotels, and rides. The confusing part starts on the ground.</p>
+        </div>
+        <div class="problem-card reveal">
+            <i class="fas fa-handshake-angle"></i>
+            <h3>You don’t know if this road is okay or not.</h3>
+            <p>A shortcut can save time. It can also feel wrong when you do not know the area.</p>
+        </div>
+        <div class="problem-card reveal">
+            <i class="fas fa-clock"></i>
+            <h3>You have to decide before you feel ready.</h3>
+            <p>Is this fare fair? Is this lane safe? Should I wait or move? These decisions happen fast.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section light-bg solution-section">
+    <div class="container solution-layout">
+        <div class="solution-copy reveal">
+            <span class="eyebrow">The solution</span>
+            <h2>Your Travel Decision Companion</h2>
+            <p>Apna Safar gives you simple signals before you move. Not to scare you. To help you choose calmly.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">Know when a road feels safer to take</div>
+            <div class="feature-card reveal">See a fair fare before you negotiate</div>
+            <div class="feature-card reveal">Check whether an area feels active or isolated</div>
+            <div class="feature-card reveal">Spot common local overcharging patterns</div>
+            <div class="feature-card reveal">Find safer options when plans change</div>
+            <div class="feature-card reveal">Keep a clear next step in stressful moments</div>
+        </div>
+    </div>
+</section>
+
+<section id="how-it-works" class="section">
+    <div class="container section-header reveal">
+        <span class="eyebrow">Simple flow</span>
+        <h2>How It Works</h2>
+    </div>
+
+    <div class="steps">
+        <div class="step reveal">
+            <span>1</span>
+            <strong>Search</strong>
+            <p>Type where you are going.</p>
+        </div>
+        <div class="step reveal">
+            <span>2</span>
+            <strong>Check</strong>
+            <p>See safety, route, and price cues.</p>
+        </div>
+        <div class="step reveal">
+            <span>3</span>
+            <strong>Decide</strong>
+            <p>Choose your next move calmly.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section trust-section">
+    <div class="container trust-layout">
+        <div class="section-header left reveal">
+            <span class="eyebrow">Why trust us</span>
+            <h2>Why Trust Us</h2>
+            <p>Travelers do not need dramatic warnings. They need clear, useful cues at the right time.</p>
+        </div>
+        <div class="principles-grid">
+            <article class="reveal">
+                <i class="fas fa-scale-balanced"></i>
+                <h3>We show why a suggestion appears</h3>
+                <p>Safer road, fair price, active area, or a reason to slow down.</p>
+            </article>
+            <article class="reveal">
+                <i class="fas fa-users"></i>
+                <h3>We design for real travel pressure</h3>
+                <p>Low battery, late arrivals, new languages, and no local friend nearby.</p>
+            </article>
+            <article class="reveal">
+                <i class="fas fa-compass"></i>
+                <h3>We keep the answer simple</h3>
+                <p>What to avoid. What to ask. Which option feels safer.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section founder-section">
+    <div class="container founder-card reveal">
+        <div>
+            <span class="eyebrow">Founder story</span>
+            <h2>Why We Started Apna Safar</h2>
+            <p>Apna Safar started with a familiar moment: arriving somewhere new and pretending to feel confident while quietly checking maps, prices, and faces around you. Travel apps helped us reach the city. They did not help us feel sure once we got there.</p>
+            <p>We are building the support layer travelers wish they had on the ground.</p>
+        </div>
+        <div class="founder-note">
+            <i class="fas fa-quote-left"></i>
+            <span>For every traveler who has stood outside a station and thought, “I just need to know what the safer choice is.”</span>
+        </div>
+    </div>
+</section>
+
+<section class="launch-cta">
+    <div class="container launch-cta-inner reveal">
+        <div>
+            <span class="eyebrow">Early access</span>
+            <h2>Help build the travel companion we all needed once.</h2>
+            <p>Share your travel moments. Tell us where uncertainty shows up. Help shape Apna Safar before launch.</p>
+        </div>
+        <div class="launch-actions">
+            <a href="contact.html" class="btn btn-primary">Get Early Access</a>
+            <a href="https://www.linkedin.com/company/apnasafar/posts/" class="btn btn-secondary" target="_blank" rel="noopener">Follow Updates</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-main">
+        <div class="footer-about">
+            <img class="footer-brand" src="assets/apna-safar-logo.png" alt="Apna Safar">
+            <p>Trust, safety, and clarity for travelers exploring unfamiliar cities.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/apnasafar/posts/" aria-label="Apna Safar on LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html">Home</a>
+            <a href="index.html#how-it-works">How It Works</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-column">
+            <h3>Focus</h3>
+            <span>Safety Alerts</span>
+            <span>Route Guidance</span>
+            <span>Fair Price Awareness</span>
+            <span>Community Signals</span>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <a href="mailto:hello@apnasafar.com">hello@apnasafar.com</a>
+            <a href="https://www.linkedin.com/company/apnasafar/posts/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <span>© 2026 Apna Safar. All rights reserved.</span>
+        <span>Built for responsible travel decisions.</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

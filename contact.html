@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Apna Safar</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="container header-container">
+
+        <a class="logo" href="index.html" aria-label="Apna Safar home">
+            <img src="assets/apna-safar-logo.png" alt="Apna Safar">
+            <span class="logo-badge">Beta</span>
+        </a>
+
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#how-it-works">How It Works</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="header-actions">
+                <a class="header-cta" href="contact.html">Get Early Access</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+    </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Feedback, Mentorship, or just to say Hello.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container skin-narrow">
+            <div class="contact-wrapper">
+                <div class="contact-intro">
+                    <h2>We'd love to hear from you</h2>
+                    <p>Whether you're a student with a story, a mentor with advice, or interested in collaboration, we are listening.</p>
+
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@apnasafar.com</span>
+                        </div>
+                        <a class="info-item info-link" href="https://www.linkedin.com/company/apnasafar/posts/" target="_blank" rel="noopener">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>Follow Apna Safar on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can we help?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-main">
+            <div class="footer-about">
+                <img class="footer-brand" src="assets/apna-safar-logo.png" alt="Apna Safar">
+                <p>Trust, safety, and clarity for travelers exploring unfamiliar cities.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/apnasafar/posts/" aria-label="Apna Safar on LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-column">
+                <h3>Focus</h3>
+                <span>Safety Alerts</span>
+                <span>Route Guidance</span>
+                <span>Fair Price Awareness</span>
+                <span>Community Signals</span>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <a href="mailto:hello@apnasafar.com">hello@apnasafar.com</a>
+                <a href="https://www.linkedin.com/company/apnasafar/posts/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 Apna Safar. All rights reserved.</span>
+            <span>Built for responsible travel decisions.</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
